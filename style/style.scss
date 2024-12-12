@@ -44,7 +44,7 @@ body {
         align-items: center;
     }
 
-    .main {
+    .content {
         h1 {
             color: $C2_white;
         }
@@ -132,7 +132,7 @@ body {
         }
     }
 
-    .main {
+    .content {
         h1 {
             font-size: 27px;
             text-align: center;
@@ -151,7 +151,7 @@ body {
 @media (max-width: 440px) {
     .rating_state {
         width: 90%;
-        .main {
+        .content {
             h1 {
                 font-size: 25px;
             }

@@ -33,10 +33,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.rating_state main h1 {
+.rating_state .main h1 {
   color: hsl(0, 0%, 100%);
 }
-.rating_state main p {
+.rating_state .main p {
   margin-top: 10px;
   color: hsl(217, 12%, 63%);
   line-height: 25px;
@@ -98,17 +98,17 @@ body {
   font-size: 14px;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.1);
-  color: rgba(251.4045, 115.77425, 18.8955, 0.6);
+  color: rgba(251, 116, 19, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.thank_you_state main h1 {
+.thank_you_state .main h1 {
   font-size: 27px;
   text-align: center;
   color: hsl(0, 0%, 100%);
 }
-.thank_you_state main p {
+.thank_you_state .main p {
   text-align: center;
   margin-top: 10px;
   color: hsl(217, 12%, 63%);
@@ -119,10 +119,10 @@ body {
   .rating_state {
     width: 90%;
   }
-  .rating_state main h1 {
+  .rating_state .main h1 {
     font-size: 25px;
   }
-  .rating_state main p {
+  .rating_state .main p {
     font-size: 14px;
   }
   .rating_state footer form .rating-buttons button {
@@ -133,6 +133,4 @@ body {
   .thank_you_state {
     width: 90%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

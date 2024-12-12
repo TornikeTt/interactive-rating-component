@@ -13,6 +13,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+body main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .rating_state {
   width: 420px;
@@ -98,7 +104,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.1);
-  color: rgba(251, 116, 19, 0.6);
+  color: rgba(251.4045, 115.77425, 18.8955, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,4 +139,6 @@ body {
   .thank_you_state {
     width: 90%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

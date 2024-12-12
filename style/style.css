@@ -1,0 +1,138 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating_state {
+  width: 420px;
+  height: 420px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 30px;
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rating_state header {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating_state main h1 {
+  color: hsl(0, 0%, 100%);
+}
+.rating_state main p {
+  margin-top: 10px;
+  color: hsl(217, 12%, 63%);
+  line-height: 25px;
+}
+.rating_state footer form .rating-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rating_state footer form .rating-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  color: hsl(217, 12%, 63%);
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.rating_state footer form .rating-buttons button:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+.rating_state footer form .rating-buttons button:focus {
+  background-color: hsl(0, 0%, 100%);
+}
+.rating_state footer form .submit {
+  margin-top: 30px;
+  width: 100%;
+  height: 45px;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.rating_state footer form .submit:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.thank_you_state {
+  width: 420px;
+  height: 420px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 30px;
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.thank_you_state header div {
+  margin-top: 20px;
+  width: 185px;
+  height: 27px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(251.4045, 115.77425, 18.8955, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thank_you_state main h1 {
+  font-size: 27px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.thank_you_state main p {
+  text-align: center;
+  margin-top: 10px;
+  color: hsl(217, 12%, 63%);
+  line-height: 25px;
+}
+
+@media (max-width: 440px) {
+  .rating_state {
+    width: 90%;
+  }
+  .rating_state main h1 {
+    font-size: 25px;
+  }
+  .rating_state main p {
+    font-size: 14px;
+  }
+  .rating_state footer form .rating-buttons button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .thank_you_state {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

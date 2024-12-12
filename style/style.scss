@@ -1,0 +1,179 @@
+$C1_orange: hsl(25, 97%, 53%);
+$C2_white: hsl(0, 0%, 100%);
+$C3_light-grey: hsl(217, 12%, 63%);
+$C4_dark-blue: hsl(213, 19%, 18%);
+$C5_very-dark-blue: hsl(216, 12%, 8%);
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: $C5_very-dark-blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating_state {
+    width: 420px;
+    height: 420px;
+    background-color: $C4_dark-blue;
+    border-radius: 30px;
+    padding: 27px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    header {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: rgba($C2_white, 0.1);
+
+        // to center start
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        h1 {
+            color: $C2_white;
+        }
+
+        p {
+            margin-top: 10px;
+            color: $C3_light-grey;
+            line-height: 25px;
+        }
+    }
+
+    footer {
+        form {
+            .rating-buttons {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                button {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    border: none;
+                    color: $C3_light-grey;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background-color: rgba($C2_white, 0.1);
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $C1_orange;
+                    }
+
+                    &:focus {
+                        background-color: $C2_white;
+                    }
+                }
+            }
+
+            .submit {
+                margin-top: 30px;
+                width: 100%;
+                height: 45px;
+                background-color: $C1_orange;
+                border-radius: 20px;
+                border: none;
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: 3px;
+                cursor: pointer;
+                &:hover {
+                    background-color: $C2_white;
+                }
+            }
+        }
+    }
+}
+
+// default display: none from style
+.thank_you_state {
+    width: 420px;
+    height: 420px;
+    background-color: $C4_dark-blue;
+    border-radius: 30px;
+    padding: 27px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    header {
+        div {
+            margin-top: 20px;
+            width: 185px;
+            height: 27px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+
+            background-color: rgba($C2_white, 0.1);
+            color: rgba($C1_orange, 0.6);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    main {
+        h1 {
+            font-size: 27px;
+            text-align: center;
+            color: $C2_white;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            color: $C3_light-grey;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .rating_state {
+        width: 90%;
+        main {
+            h1 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        footer {
+            form {
+                .rating-buttons {
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .thank_you_state {
+        width: 90%;
+    }
+}
